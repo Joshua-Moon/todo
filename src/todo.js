@@ -7,7 +7,6 @@ const TODOS_LS = "toDos";
 let toDos = [];
 
 function deleteToDo(event) {
-  //todo 3.6 check the process to solve a below issue
   const btn = event.target;
   const li = btn.parentNode;
   toDoList.removeChild(li);
