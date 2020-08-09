@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import "main.css";
+@import "center.css";
+@import "clock.css";
+@import "todo.css"; 
+@import "weather.css";
+/* Todo 배경사진 UNSPLASH API 적용으로 변경
+@import "location.css"; */
+
+
+
+
