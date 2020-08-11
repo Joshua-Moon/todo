@@ -11,7 +11,7 @@ const IMG_NUMBER = 5;
 function paintImage(imgNumber) {
   const image = new Image();
   //Todo image 파일 url-loader 사용하기
-  image.src = `src/images/${imgNumber + 1}.jpg`;
+  image.src = `${imgNumber + 1}.jpg`;
   image.classList.add("bgImage");
   body.prepend(image);
 }
