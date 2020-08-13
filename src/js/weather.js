@@ -7,12 +7,10 @@ const weather = document.querySelector(".js-weather .weather__text");
 
 function getWeather(coords) {
   fetch(
-    `${WEATHER_API}lat=${coords.lat}&lon=${
-      coords.lng
-    }&appid=${API_KEY}&units=metric`
+    `${WEATHER_API}lat=${coords.lat}&lon=${coords.lng}&appid=${API_KEY}&units=metric`
   )
-    .then(response => response.json())
-    .then(json => {
+    .then((response) => response.json())
+    .then((json) => {
       const name = json.name;
       const temperature = json.main.temp;
       weather.innerHTML = `${Math.floor(temperature)}° @ ${name}`;
@@ -24,7 +22,7 @@ function handleGeoSuccess(position) {
   const lng = position.coords.longitude;
   const coords = {
     lat,
-    lng
+    lng,
   };
   localStorage.setItem(COORDS, JSON.stringify(coords));
   getWeather(coords);

@@ -1,8 +1,8 @@
-import '../images/1.jpg'
-import '../images/2.jpg'
-import '../images/3.jpg'
-import '../images/4.jpg'
-import '../images/5.jpg'
+import "../images/1.jpg";
+import "../images/2.jpg";
+import "../images/3.jpg";
+import "../images/4.jpg";
+import "../images/5.jpg";
 
 const body = document.querySelector("body");
 
@@ -21,7 +21,7 @@ function genRandom() {
   return number;
 }
 function init() {
-  const randomNumber = genRandom(); 
+  const randomNumber = genRandom();
   paintImage(randomNumber);
 }
 
